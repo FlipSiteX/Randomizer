@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Генератор рандомных чисел</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <h1>Генератор случайных чисел</h1>
+        <form action="#">
+            <div class="input_row">
+                <label for="startCount">От</label>
+                <input type="number" id="startCount" value="0">
+                <label for="endCount">До</label>
+                <input type="number" id="endCount" value="10">
+            </div>
+            <button onclick="random()">Генерация</button>
+        </form>
+        <h2>Ваше число:</h2>
+        <h2 id="result"></h2>
+    </div>
+</body>
+</html>
