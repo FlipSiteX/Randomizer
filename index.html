@@ -6,24 +6,52 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Генератор рандомных чисел</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/app.js" defer></script>
 </head>
 <body>
-    <div class="main">
-        <h1>Генератор случайных чисел</h1>
-        <form action="#">
-            <div class="input_row">
-                <label for="startCount">от</label>
-                <input type="number" id="startCount" value="0">
-                <label for="endCount">до</label>
-                <input type="number" id="endCount" value="10">
-            </div>
-            <button onclick="random()">Генерация</button>
-        </form>
-        <h2>Ваше число:</h2>
-        <h2 id="result"></h2>
-        <div class="backdrop"></div>
+
+<header>
+    <div class="head">
+
+        <nav>
+            <button onclick="numbPage()">Рандомные числа</button>
+            <button onclick="imgPage()">Рандомные картинки</button>
+        </nav>
+
     </div>
+</header>
+
+<main>
+
+    <div class="backdrop">
+        <div class="random_numbers">
+            <h1>Генератор случайных чисел</h1>
+            <form action="#">
+                <div class="input_row">
+                    <label for="startCount">от</label>
+                    <input type="number" id="startCount" value="0">
+                    <label for="endCount">до</label>
+                    <input type="number" id="endCount" value="10">
+                </div>
+                <button onclick="randomNumber()">Генерация</button>
+            </form>
+            <h2>Ваше число:</h2>
+            <h2 id="result"></h2>
+        </div>
+    </div>
+
+    <div class="backdrop">
+        <div class="random_images">
+            <h1>Рандомная картинка</h1>
+            <form action="#">
+                <div class="image_place"></div>
+                <button onclick="randomImg()">Генерация</button>
+            </form>
+        </div>
+    </div>
+
+</main>
+
 </body>
 </html>
