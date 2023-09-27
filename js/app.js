@@ -21,6 +21,5 @@ let numbPage = () => {
 }
 
 let randomImg = () => {
-    let i = imgArray[Math.floor(Math.random() * (imgArray.length))]
-    imgPlace[0].style.backgroundImage = `url(${i})`
+    imgPlace[0].style.backgroundImage = `url(${imgArray[Math.floor(Math.random() * (imgArray.length))]})`
 }
