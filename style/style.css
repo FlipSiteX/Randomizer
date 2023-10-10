@@ -23,11 +23,9 @@ main {
 }
 
 .random_numbers, .random_images {
-    position: relative;
     width: 100%;
     height: 100%;
     padding: 80px 40px;
-    z-index: 1;
 }
 
 .random_images {
@@ -124,6 +122,16 @@ main button:active {
     box-shadow: 0 1px 4px 0 gray;
 }
 
+header {
+    z-index: 10;
+    position: relative;
+}
+
+main {
+    position: relative;
+    z-index: 0;
+}
+
 .head button {
     height: 7vh;
     font-size: 24px;
@@ -156,11 +164,17 @@ main button:active {
 }
 
 .random_images {
-    padding: 35px;
-    width: 600px;
+    padding: 30px;
+    width: 45vw;
+    min-width: 380px;
 }
 
 .random_images button {
     margin-top: 30px;
 }
 
+@media (max-width: 700px) {
+    .image_place {
+        height: 380px;
+    }
+}
